@@ -41,7 +41,32 @@ namespace Eszter_2020._05._11
             Console.WriteLine("A háromszögbe írt kör sugara: {0}", r);
             double r1 = (a * b) / (a + b + c6);
             Console.WriteLine("A háromszögbe írt kör sugara: " + r1);
-            //
+
+            //Számoljuk ki a köré írt kör sugarát!
+            Console.WriteLine($"A háromszög köré írható kör sugara: {c6 / 2}");
+
+            //ToString() metódussal kerekíteni tudunk!
+            Console.WriteLine($"A háromszög köré írható kör sugara: {(c6 / 2).ToString("0.00")}");
+
+            //Math.Round() metódussal kerekíteni tudunk!
+            Console.WriteLine($"A háromszög köré írható kör sugara: {Math.Round(c6, 4)}");
+
+            //Egy BKV jegy 270 Ft, egy automatából vett kávé 70 Ft, 
+            //egy liter tej 210 Ft és egy üveg bor 700 Ft. 
+            //Olvasd be a forint - euro árfolyamot (1 euro hány forint), majd írd ki a fenti termékek árát euroban! 
+            int arfolyam = 354;
+            double arfolyam1 = 353.55;
+
+            //változó a termékekenek
+            const int BKV_jegy = 270;
+            double kave = 70.0;
+            int tej = 210;
+            int bor = 700;
+            Console.WriteLine($"A BKV jegy ára euróban: {(double)BKV_jegy / arfolyam}");
+            Console.WriteLine($"A kávé ára euróban: {kave / arfolyam}");
+            Console.WriteLine($"A tej ára euróban: {((double)tej / arfolyam).ToString("0.00")}");
+            Console.WriteLine($"A bor ára euróban: {((double)bor / arfolyam).ToString("0.00")}");
+            
             Console.ReadKey();
         }
     }
