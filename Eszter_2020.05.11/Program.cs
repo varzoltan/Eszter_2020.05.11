@@ -41,6 +41,7 @@ namespace Eszter_2020._05._11
             Console.WriteLine("A háromszögbe írt kör sugara: {0}", r);
             double r1 = (a * b) / (a + b + c6);
             Console.WriteLine("A háromszögbe írt kör sugara: " + r1);
+            //
             Console.ReadKey();
         }
     }
